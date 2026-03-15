@@ -22,13 +22,13 @@ public class Bespoke {
 
 		//loading...
 
-		b.loadData("src/resources/listoferrors_in.txt", delimiter);
+		b.loadData("./resources/listoferrors_in.txt", delimiter);
 
 		for(Map.Entry<Integer, SimpleLog> e : b.data.entrySet()) // get all entries from set
 			System.out.println(e.getValue().toString(delimiter)); // and print the values
 
 		//saving...
-		b.saveData("src/resources/listoferrors_out.txt", delimiter, true);
+		b.saveData("./resources/listoferrors_out.txt", delimiter, true);
 	}
 
 	/*

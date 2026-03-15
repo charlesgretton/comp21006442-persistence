@@ -123,9 +123,9 @@ public class PDXML {
 		xml.people.add(new Person(11,"Homer", "Simpson"));
 		xml.people.add(new Person(12,"Maggie", "Simpson"));
 
-		xml.saveData("src/resources/people_out.xml");
+		xml.saveData("./resources/people_out.xml");
 
-		List<Person> newPeople = xml.loadData("src/resources/people_in.xml");
+		List<Person> newPeople = xml.loadData("./resources/people_in.xml");
 		for(Person p : newPeople)
 		{
 			System.out.println(p.toString());

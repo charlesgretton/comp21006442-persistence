@@ -31,9 +31,9 @@ public class PDSerialization implements Serializable{
 	public static void main(String[] args) 
 	{
 		PDSerialization pds_sv = new PDSerialization("Bernardo", 321, "myPassword");
-		pds_sv.saveData("src/resources/listofpeople.ser");
+		pds_sv.saveData("./resources/listofpeople.ser");
 
-		PDSerialization pds_ld = loadData("src/resources/listofpeople.ser");
+		PDSerialization pds_ld = loadData("./resources/listofpeople.ser");
 		System.out.println("id: " + pds_ld.id + " - " + pds_ld.name + " - " + pds_ld.password);
 		System.out.println(pds_ld);
 	}
