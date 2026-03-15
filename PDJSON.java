@@ -34,7 +34,7 @@ public class PDJSON {
 		Gson gson = new Gson();
 		JsonReader jsonReader = null;
 
-		final Type CUS_LIST_TYPE = new TypeToken<List<PersonJSON>>() {}.getType(); // reflection: need to create a custom type by inspection
+		final Type CUS_LIST_TYPE = new TypeToken<List<PersonJSON>>() {}.getType(); // reflection with erasure: need to create a custom type by inspection
 		//or
 //		final Type CUS_LIST_TYPE = TypeToken.getParameterized(ArrayList.class, PersonJSON.class).getType();
 		
